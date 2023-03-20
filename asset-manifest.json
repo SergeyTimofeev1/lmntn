@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lmntn/static/css/main.964fdded.css",
+    "main.js": "/lmntn/static/js/main.287496aa.js",
+    "index.html": "/lmntn/index.html",
+    "main.964fdded.css.map": "/lmntn/static/css/main.964fdded.css.map",
+    "main.287496aa.js.map": "/lmntn/static/js/main.287496aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.287496aa.js"
+  ]
+}
