@@ -4,8 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 
 const Orders = () => {
   return (
-    <div className="orders">
-      <h1>test</h1>
+    <div className="main-page__orders orders">
       {/* <Routes>
         <Route path="orders" element={<MainPage />} />
         <Route path="user" element={<UserCard />} />

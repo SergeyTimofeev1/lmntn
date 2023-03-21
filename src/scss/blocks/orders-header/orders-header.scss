@@ -1,0 +1,95 @@
+.header {
+  // border-bottom: 1px solid rgb(206, 203, 203);
+  &__inner,
+  &__info,
+  &__info-buttons {
+    @include flex;
+  }
+
+  &__info {
+  }
+
+  &__logo {
+    margin-right: rem(29);
+  }
+
+  &__info-btn {
+    @include flex-center;
+    gap: rem(14.4);
+    padding: rem(16) rem(24) rem(16) rem(26.4);
+    cursor: pointer;
+
+    &.active {
+      border-bottom: rem(2) solid rgba(51, 51, 51, 1);
+    }
+  }
+
+  &__actions {
+    @include flex;
+    gap: rem(20);
+  }
+
+  &__actions-input,
+  &__actions-btn {
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: rem(19);
+  }
+
+  &__actions-input {
+    padding: rem(8.5) rem(36);
+    border: rem(1) solid rgba(51, 51, 51, 1);
+    border-radius: rem(4);
+    outline: none;
+
+    &::placeholder {
+      color: rgba(51, 51, 51, 1);
+    }
+  }
+
+  &__actions-btn {
+    height: rem(38);
+    background: transparent;
+    border: rem(1) solid rgba(51, 51, 51, 1);
+    border-radius: rem(4);
+    cursor: pointer;
+    @include flex;
+    gap: rem(10.5);
+    padding: 0 rem(14.4);
+
+    &:hover {
+      background-color: rgba(51, 51, 51, 1);
+      color: white;
+      path {
+        stroke: white;
+      }
+    }
+
+    &.unload {
+      background-color: rgba(51, 51, 51, 1);
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: rgba(51, 51, 51, 1);
+        path {
+          stroke: rgba(51, 51, 51, 1);
+        }
+      }
+    }
+  }
+}
+
+//  TODO  наколхозил обертку для инпута,чтобы вставить картинку(исправить если будет время)
+
+.input__wrapper {
+  position: relative;
+  &:before {
+    position: absolute;
+    content: url('../../../assets/icons/search-icon.svg');
+    left: rem(14);
+    top: rem(9.4);
+    z-index: 15;
+    font-size: rem(15);
+  }
+}

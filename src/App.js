@@ -7,7 +7,13 @@ import MainPage from 'pages/MainPage'
 function App() {
   const { isAuth } = useAuth()
   // return <div className="App">{!isAuth && <Navigate replace to="/login" />}</div>
-  return <div className="App">{!isAuth ? <Authorization /> : <MainPage />}</div>
+  // !! Разкоментить когда закончу верстать главную
+  // return <div className="App">{!isAuth ? <Authorization /> : <MainPage />}</div>
+  return (
+    <div className="App">
+      <MainPage />
+    </div>
+  )
 }
 
 export default App

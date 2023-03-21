@@ -1,6 +1,7 @@
 // mixins
 @import './scss/mixins/px-to-rem.scss';
 @import './scss/mixins/media.scss';
+@import './scss/mixins/flex.scss';
 
 // UI components
 
@@ -9,6 +10,7 @@
 // blocks
 @import './scss/blocks/authorization/authorization.scss';
 @import './scss/blocks/form/form.scss';
+@import './scss/blocks/orders-header/orders-header.scss';
 
 body {
   margin: 0;
