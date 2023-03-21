@@ -1,3 +1,4 @@
+// import SvgSelector from 'components/SvgSelector/SvgSelector'
 import SvgSelector from 'components/SvgSelector/SvgSelector'
 
 const OrdersHeader = () => {

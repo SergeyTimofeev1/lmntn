@@ -11,6 +11,7 @@
 @import './scss/blocks/authorization/authorization.scss';
 @import './scss/blocks/form/form.scss';
 @import './scss/blocks/orders-header/orders-header.scss';
+@import './scss/blocks/table-header/table-header.scss';
 
 body {
   margin: 0;
@@ -102,4 +103,8 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.orders {
+  overflow-y: scroll;
 }

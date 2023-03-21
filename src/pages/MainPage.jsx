@@ -1,5 +1,5 @@
-import OrdersHeader from 'components/orders-header/OrdersHeader'
-import Orders from 'components/orders/Orders'
+import OrdersHeader from 'components/table/orders-header/OrdersHeader'
+import Orders from 'components/table/orders/Orders'
 
 const MainPage = () => {
   return (

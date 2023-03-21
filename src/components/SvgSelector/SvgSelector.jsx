@@ -116,6 +116,42 @@ const SvgSelector = ({ id }) => {
           />
         </svg>
       )
+    case 'filter':
+      return (
+        <svg
+          width="14"
+          height="10"
+          viewBox="0 0 14 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.40005 4.99999H10.6M1.80005 1.79999H12.2M5.80005 8.19999H8.20005"
+            stroke="#333333"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      )
+    case 'arrow':
+      return (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.88574 7.20001L8.00003 3.20001M8.00003 3.20001L12.1143 7.20001M8.00003 3.20001V12.8"
+            stroke="#BBC6D6"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      )
     default:
       break
   }
