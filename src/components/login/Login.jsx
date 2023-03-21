@@ -24,7 +24,7 @@ const Login = () => {
       .catch(() => alert('Пользователя не существует'))
   }
 
-  return <Form title="Войти" handleClick={handleLogin} />
+  return <Form title="Войти" handleClick={handleLogin} passRestore={'Восстановить пароль'} />
 }
 
 export default Login

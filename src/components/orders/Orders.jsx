@@ -1,11 +1,17 @@
-import LoginPage from 'pages/LoginPage'
-import { useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
-import { removeUser } from 'store/slices/userSlice'
-import { useAuth } from '../../hooks/use-auth'
+import UserCard from 'components/user-card/UserCard'
+import MainPage from 'pages/MainPage'
+import { Route, Routes } from 'react-router-dom'
 
 const Orders = () => {
-  return <h1>orders</h1>
+  return (
+    <div className="orders">
+      <h1>test</h1>
+      {/* <Routes>
+        <Route path="orders" element={<MainPage />} />
+        <Route path="user" element={<UserCard />} />
+      </Routes> */}
+    </div>
+  )
 }
 
 export default Orders

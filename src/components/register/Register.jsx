@@ -24,7 +24,7 @@ const Register = () => {
       .catch(console.error)
   }
 
-  return <Form title="Зарегистрироваться" handleClick={handleRegister} />
+  return <Form title="Зарегистрироваться" handleClick={handleRegister} passRestore={''} />
 }
 
 export default Register

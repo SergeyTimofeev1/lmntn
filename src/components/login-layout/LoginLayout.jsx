@@ -1,16 +1,16 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 
 const LoginLayout = () => {
   return (
     <>
-      <div className="login-header">
-        <Link className="login-page__link active" to="/login">
+      <div className="auth__header">
+        <NavLink className="auth__link" to="/login">
           Вход
-        </Link>
-        <Link className="login-page__link" to="/registration">
+        </NavLink>
+        <NavLink className="auth__link" to="/registration">
           Регистрация
-        </Link>
+        </NavLink>
       </div>
       <Outlet />
     </>

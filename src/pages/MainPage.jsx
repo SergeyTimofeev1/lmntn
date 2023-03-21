@@ -1,7 +1,7 @@
-import React from 'react'
+import Orders from 'components/orders/Orders'
 
 const MainPage = () => {
-  return <div></div>
+  return <Orders />
 }
 
 export default MainPage

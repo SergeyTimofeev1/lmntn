@@ -1,31 +1,31 @@
 import React, { useState } from 'react'
 
-const Form = ({ title, handleClick }) => {
+const Form = ({ title, handleClick, passRestore }) => {
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')
 
   return (
     <>
-      <form className="login">
-        <div className="login__content">
+      <form className="auth-form">
+        <div className="auth-form__content">
           <input
-            className="login__input"
+            className="auth-form__input"
             type="text"
             placeholder="Логин"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
           <input
-            className="login__input"
+            className="auth-form__input"
             type="password"
             placeholder="Пароль"
             value={pass}
             onChange={e => setPass(e.target.value)}
           />
         </div>
-        <p className="login__pass-restore-text">Восстановить пароль</p>
+        {passRestore && <p className="auth-form__pass-restore-text">{passRestore}</p>}
         <button
-          className="login__btn"
+          className="auth-form__btn button-main"
           onClick={e => {
             e.preventDefault()
             handleClick(email, pass)

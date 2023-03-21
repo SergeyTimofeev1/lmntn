@@ -1,0 +1,21 @@
+.button-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(0) rem(20);
+  background: #333333;
+  border-radius: rem(4);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #515050;
+  }
+
+  @include media(768px) {
+    &:hover {
+      background: #333333;
+    }
+  }
+}

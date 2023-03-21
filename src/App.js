@@ -1,24 +1,13 @@
 import './App.scss'
-import LoginPage from './pages/LoginPage'
-import { Route, Routes } from 'react-router-dom'
-import Orders from './components/orders/Orders'
-import RegisterPage from './pages/RegisterPage'
-import LoginLayout from './components/login-layout/LoginLayout'
-import UserCard from './components/user-card/UserCard'
+import { useAuth } from 'hooks/use-auth'
+import Authorization from 'components/authorization/Authorization'
+import { Navigate, Routes } from 'react-router-dom'
+import MainPage from 'pages/MainPage'
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<LoginLayout />}>
-          <Route path="login" element={<LoginPage />} />
-          <Route path="orders" element={<Orders />} />
-          <Route path="registration" element={<RegisterPage />} />
-          <Route path="user" element={<UserCard />} />
-        </Route>
-      </Routes>
-    </div>
-  )
+  const { isAuth } = useAuth()
+  // return <div className="App">{!isAuth && <Navigate replace to="/login" />}</div>
+  return <div className="App">{!isAuth ? <Authorization /> : <MainPage />}</div>
 }
 
 export default App
