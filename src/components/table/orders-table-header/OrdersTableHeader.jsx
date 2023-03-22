@@ -5,7 +5,7 @@ import TableHeaderItem from '../TableHeaderItem/TableHeaderItem'
 const OrdersTableHeader = () => {
   return (
     <thead className="table__header table-header">
-      <tr>
+      <tr className="table-header__items">
         {tableHeaderData.map((t, i) => (
           <TableHeaderItem
             key={i}

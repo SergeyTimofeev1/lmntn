@@ -4,9 +4,13 @@ import { tableRowData } from 'data'
 
 const OrdersTableBody = () => {
   return (
-    <tbody className="table__body">
+    <tbody className="table__body table-body">
       {tableRowData.map((row, index) => (
-        <OrdersTableRow key={index} rowData={tableRowData[index]} />
+        <OrdersTableRow
+          key={index}
+          rowData={tableRowData[index]}
+          options={row.hasOwnProperty('options') ? row.options?.value : ''}
+        />
       ))}
     </tbody>
   )

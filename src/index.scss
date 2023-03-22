@@ -11,7 +11,7 @@
 @import './scss/blocks/authorization/authorization.scss';
 @import './scss/blocks/form/form.scss';
 @import './scss/blocks/orders-header/orders-header.scss';
-@import './scss/blocks/table-header/table-header.scss';
+@import './scss/blocks/table/table.scss';
 
 body {
   margin: 0;
@@ -62,7 +62,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -106,5 +105,5 @@ select {
 }
 
 .orders {
-  overflow-y: scroll;
+  overflow-x: scroll;
 }

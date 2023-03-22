@@ -82,13 +82,19 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: {
+      title: 5,
+      status: 'pending'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '45м',
+    currentState: {
+      title: 'Готов к обеспечению',
+      status: 'pending-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -103,13 +109,70 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
+    oneC: {
+      title: 1,
+      status: 'completed'
+    },
+    TO: {
+      title: 2,
+      status: 'completed'
+    },
+    await: {
+      title: 2,
+      status: 'completed'
+    },
+    productionDate: {
+      title: '5 25.12.22',
+      status: 'completed'
+    },
+    endDate: {
+      title: '3 - 26.12.23',
+      status: 'canceled'
+    },
     downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    currentState: {
+      title: 'Рассторгнут',
+      status: 'canceled-color'
+    },
+    dateAndTime: '15.02.23 14:00',
+    client: 'Иванов И.И.',
+    cost: '100 000р',
+    advance: '10 000р',
+    fee: '15 000 р',
+    rgp: 'Петров В.В.',
+    region: 'Санкт-Петербург и ЛО',
+    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
+    clientPhone: '+7 (999) 888-77-66',
+    options: {
+      value: 'canceled'
+    }
+  },
+  {
+    contractId: 'ХХ_1234567',
+    startDate: '16.12.2022',
+    status: 'Исправлен МПП',
+    oneC: {
+      title: 1,
+      status: 'completed'
+    },
+    TO: {
+      title: 3,
+      status: 'completed'
+    },
+    await: {
+      title: 2,
+      status: 'completed'
+    },
+    productionDate: {
+      title: '5 25.12.22',
+      status: 'completed'
+    },
+    endDate: '',
+    downtime: '15м',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -124,13 +187,49 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: 5,
+    TO: {
+      title: 2,
+      status: 'canceled'
+    },
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '2д 4ч 15м',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
+    dateAndTime: '15.02.23 14:00',
+    client: 'Иванов И.И.',
+    cost: '100 000р',
+    advance: '10 000р',
+    fee: '15 000 р',
+    rgp: 'Петров В.В.',
+    region: 'Санкт-Петербург и ЛО',
+    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
+    clientPhone: '+7 (999) 888-77-66',
+    options: {
+      value: 'completed'
+    }
+  },
+  {
+    contractId: 'ХХ_1234567',
+    startDate: '16.12.2022',
+    status: 'Отлож. продажа',
+    oneC: {
+      title: 2,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '45м',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -145,13 +244,22 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: {
+      title: 5,
+      status: 'pending'
+    },
+    TO: {
+      title: 2,
+      status: 'canceled'
+    },
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '2ч 02м',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -166,13 +274,76 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: {
+      title: 3,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '5м',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
+    dateAndTime: '15.02.23 14:00',
+    client: 'Иванов И.И.',
+    cost: '100 000р',
+    advance: '10 000р',
+    fee: '15 000 р',
+    rgp: 'Петров В.В.',
+    region: 'Санкт-Петербург и ЛО',
+    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
+    clientPhone: '+7 (999) 888-77-66'
+  },
+  {
+    contractId: 'ХХ_1234567',
+    startDate: '16.12.2022',
+    status: 'Не Продан',
+    oneC: {
+      title: 43,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '45м',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
+    dateAndTime: '15.02.23 14:00',
+    client: 'Иванов И.И.',
+    cost: '100 000р',
+    advance: '10 000р',
+    fee: '15 000 р',
+    rgp: 'Петров В.В.',
+    region: 'Санкт-Петербург и ЛО',
+    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
+    clientPhone: '+7 (999) 888-77-66'
+  },
+  {
+    contractId: 'ХХ_1234567',
+    startDate: '16.12.2022',
+    status: 'Исправлен МПП',
+    oneC: {
+      title: '5',
+      status: 'pending'
+    },
+    TO: {
+      title: '2',
+      status: 'canceled'
+    },
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '2ч 02м',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -187,13 +358,19 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: {
+      title: 3,
+      status: 'сompleted'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '25м',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -208,13 +385,67 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
+    oneC: {
+      title: 5,
+      status: 'completed'
+    },
+    TO: {
+      title: 2,
+      status: 'completed'
+    },
+    await: {
+      title: 2,
+      status: 'completed'
+    },
+    productionDate: {
+      title: '5 25.12.22',
+      status: 'completed'
+    },
+    endDate: {
+      title: '3 - 26.12.23',
+      status: 'canceled'
+    },
     downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
+    dateAndTime: '15.02.23 14:00',
+    client: 'Иванов И.И.',
+    cost: '100 000р',
+    advance: '10 000р',
+    fee: '15 000 р',
+    rgp: 'Петров В.В.',
+    region: 'Санкт-Петербург и ЛО',
+    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
+    clientPhone: '+7 (999) 888-77-66',
+    options: {
+      value: 'canceled'
+    }
+  },
+  {
+    contractId: 'ХХ_1234567',
+    startDate: '16.12.2022',
+    status: 'Продан',
+    oneC: {
+      title: 1,
+      status: 'completed'
+    },
+    TO: {
+      title: 2,
+      status: 'completed'
+    },
+    await: {
+      title: 2,
+      status: 'completed'
+    },
+    productionDate: '',
+    endDate: '',
+    downtime: '5д 4ч 15м',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -229,13 +460,19 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: {
+      title: 4,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '2ч 02м',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -250,13 +487,31 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    oneC: {
+      title: 2,
+      status: 'completed'
+    },
+    TO: {
+      title: 1,
+      status: 'completed'
+    },
+    await: {
+      title: 1,
+      status: 'completed'
+    },
+    productionDate: {
+      title: '1 - 25.12.22',
+      status: 'completed'
+    },
+    endDate: {
+      title: '3 - 26.12.23',
+      status: 'completed'
+    },
+    downtime: '15м',
+    currentState: {
+      title: 'В производстве',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -271,13 +526,52 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
+    oneC: {
+      title: 1,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
     downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
+    dateAndTime: '15.02.23 14:00',
+    client: 'Иванов И.И.',
+    cost: '100 000р',
+    advance: '10 000р',
+    fee: '15 000 р',
+    rgp: 'Петров В.В.',
+    region: 'Санкт-Петербург и ЛО',
+    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
+    clientPhone: '+7 (999) 888-77-66',
+    options: {
+      value: 'completed'
+    }
+  },
+  {
+    contractId: 'ХХ_1234567',
+    startDate: '16.12.2022',
+    status: 'Продан',
+    oneC: {
+      title: 1,
+      status: 'pending'
+    },
+    TO: {
+      title: 2,
+      status: 'canceled'
+    },
+    await: '',
+    productionDate: '',
+    endDate: '',
+    downtime: '5д 4ч 15м',
+    currentState: {
+      title: 'Блок',
+      status: 'block'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -292,13 +586,19 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
+    oneC: {
+      title: 2,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
     downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -313,13 +613,25 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
+    oneC: {
+      title: 4,
+      status: 'completed'
+    },
+    TO: {
+      title: 2,
+      status: 'completed'
+    },
+    await: {
+      title: 2,
+      status: 'completed'
+    },
+    productionDate: '',
+    endDate: '',
     downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',
@@ -334,160 +646,19 @@ export const tableRowData = [
     contractId: 'ХХ_1234567',
     startDate: '16.12.2022',
     status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
+    oneC: {
+      title: 6,
+      status: 'completed'
+    },
+    TO: '',
+    await: '',
+    productionDate: '',
+    endDate: '',
     downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
-    dateAndTime: '15.02.23 14:00',
-    client: 'Иванов И.И.',
-    cost: '100 000р',
-    advance: '10 000р',
-    fee: '15 000 р',
-    rgp: 'Петров В.В.',
-    region: 'Санкт-Петербург и ЛО',
-    deliveryAdress: 'г. Пушкин, наб. реки Фонтанки, 129...',
-    clientPhone: '+7 (999) 888-77-66'
-  },
-  {
-    contractId: 'ХХ_1234567',
-    startDate: '16.12.2022',
-    status: 'Продан',
-    oneC: 1,
-    TO: 1,
-    await: 1,
-    productionDate: '25.12.22',
-    endDate: '3 - 26.12.23',
-    downtime: '5д 4ч 15м',
-    currentState: 'Готов к обеспечению',
+    currentState: {
+      title: 'Согласован',
+      status: 'completed-color'
+    },
     dateAndTime: '15.02.23 14:00',
     client: 'Иванов И.И.',
     cost: '100 000р',

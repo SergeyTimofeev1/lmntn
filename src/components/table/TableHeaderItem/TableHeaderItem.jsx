@@ -6,9 +6,11 @@ const TableHeaderItem = ({ title, isSort, className }) => {
 
   return (
     <th className={className}>
-      {title}
-      {isSort && <SvgSelector id="filter" />}
-      {sortActive && <SvgSelector id="arrow" />}
+      <div className={className + '-wrapper'}>
+        {title}
+        {isSort && <SvgSelector id="filter" />}
+        {sortActive && <SvgSelector id="arrow" />}
+      </div>
     </th>
   )
 }

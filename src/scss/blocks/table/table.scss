@@ -1,0 +1,87 @@
+.table-header {
+  &__item {
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: rem(15);
+    text-align: left;
+    padding: rem(12) rem(8);
+  }
+}
+
+.table-body {
+  &__items.canceled {
+    background: #ffc1c1;
+    opacity: 0.6;
+  }
+
+  &__items.completed {
+    background: #cdffd2;
+    opacity: 0.6;
+  }
+
+  &__item {
+    font-size: rem(14);
+    font-weight: 600;
+
+    &:nth-child(4) > div,
+    &:nth-child(5) > div,
+    &:nth-child(6) > div,
+    &:nth-child(7) > div,
+    &:nth-child(8) > div {
+      background-color: #f0f3f7;
+      border: 1px dashed #bbc6d6;
+      border-radius: rem(4);
+      width: 7rem;
+      height: rem(24);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: rem(5);
+      padding-left: rem(5);
+    }
+
+    &:nth-child(4) > div.pending,
+    &:nth-child(5) > div.pending,
+    &:nth-child(6) > div.pending,
+    &:nth-child(7) > div.pending,
+    &:nth-child(8) > div.pending {
+      background: #ffbe40;
+      border: none;
+    }
+
+    &:nth-child(4) > div.completed,
+    &:nth-child(5) > div.completed,
+    &:nth-child(6) > div.completed,
+    &:nth-child(7) > div.completed,
+    &:nth-child(8) > div.completed {
+      background: #54d561;
+      border: none;
+    }
+
+    &:nth-child(4) > div.canceled,
+    &:nth-child(5) > div.canceled,
+    &:nth-child(6) > div.canceled,
+    &:nth-child(7) > div.canceled,
+    &:nth-child(8) > div.canceled {
+      background: #ff7e7e;
+      border: none;
+    }
+  }
+
+  &__item-wrapper {
+    margin: rem(12) rem(8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(4);
+  }
+
+  &__item-wrapper + .table-body__item-wrapper {
+    margin-left: rem(32);
+  }
+}
+
+.table {
+  width: rem(2666);
+  border-collapse: collapse;
+}
