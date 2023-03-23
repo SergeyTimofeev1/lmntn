@@ -19,3 +19,22 @@
     }
   }
 }
+
+.button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: rem(19);
+  padding: rem(12);
+  border: rem(1) solid #333333;
+  border-radius: rem(4);
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(76, 76, 76, 1);
+    border-color: rgba(76, 76, 76, 1);
+  }
+}

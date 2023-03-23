@@ -8,6 +8,7 @@ const Orders = () => {
         <OrdersTableHeader />
         <OrdersTableBody />
       </table>
+      <p style={{ textAlign: 'center', fontWeight: '600' }}>Загружаю еще...</p>
     </div>
   )
 }

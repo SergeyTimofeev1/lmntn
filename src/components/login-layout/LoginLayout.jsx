@@ -5,7 +5,7 @@ const LoginLayout = () => {
   return (
     <>
       <div className="auth__header">
-        <NavLink className="auth__link" to="/login">
+        <NavLink className="auth__link" to="/">
           Вход
         </NavLink>
         <NavLink className="auth__link" to="/registration">

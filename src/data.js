@@ -20,7 +20,7 @@ export const tableHeaderData = [
     isSorted: true
   },
   {
-    title: 'Ожид.обесп-я',
+    title: `Ожид. обесп-я`,
     isSorted: true
   },
   {
