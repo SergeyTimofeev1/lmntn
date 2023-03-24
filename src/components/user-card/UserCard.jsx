@@ -15,7 +15,9 @@ const UserCard = ({ login }) => {
       <UserCardHeader />
 
       <div className="user">
-        <h2 className="user__title">Мишанин Сергей Викторович, старший менеджер</h2>
+        <div className="container">
+          <h2 className="user__title">Мишанин Сергей Викторович, старший менеджер</h2>
+        </div>
         <div className="user__content user-content">
           <form className="user-content__form user-form" action="#">
             <h4 className="user-form__title">О пользователе</h4>

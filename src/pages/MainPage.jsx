@@ -2,6 +2,7 @@ import AddCommentForm from 'components/order/add-comment-form.jsx/AddCommentForm
 import OrderComponent from 'components/order/order-component/OrderComponent'
 import OrderLogoPreview from 'components/order/order-logo-preview/OrderLogoPreview'
 import Orders from 'components/table/orders/Orders'
+import ToolTipComponent from 'components/UI/ToolTipComponent'
 import UserCard from 'components/user-card/UserCard'
 import { useState } from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
@@ -34,6 +35,7 @@ const MainPage = () => {
       >
         {!isModal && !isOrderImg ? (
           <div className="main-page">
+            <ToolTipComponent />
             <Routes>
               <Route path="/orders/" element={<Orders />}>
                 <Route path="*" element={<OrderComponent />} />

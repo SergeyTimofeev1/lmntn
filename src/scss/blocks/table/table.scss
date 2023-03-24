@@ -85,11 +85,11 @@
     font-size: rem(14);
     font-weight: 600;
 
-    &:nth-child(4) > div,
-    &:nth-child(5) > div,
-    &:nth-child(6) > div,
-    &:nth-child(7) > div,
-    &:nth-child(8) > div {
+    &:nth-child(4) .table-body__item-wrapper,
+    &:nth-child(5) .table-body__item-wrapper,
+    &:nth-child(6) .table-body__item-wrapper,
+    &:nth-child(7) .table-body__item-wrapper,
+    &:nth-child(8) .table-body__item-wrapper {
       background-color: #f0f3f7;
       border: 1px dashed #bbc6d6;
       border-radius: rem(4);
@@ -102,29 +102,29 @@
       padding-left: rem(5);
     }
 
-    &:nth-child(4) > div.pending,
-    &:nth-child(5) > div.pending,
-    &:nth-child(6) > div.pending,
-    &:nth-child(7) > div.pending,
-    &:nth-child(8) > div.pending {
+    &:nth-child(4) .table-body__item-wrapper.pending,
+    &:nth-child(5) .table-body__item-wrapper.pending,
+    &:nth-child(6) .table-body__item-wrapper.pending,
+    &:nth-child(7) .table-body__item-wrapper.pending,
+    &:nth-child(8) .table-body__item-wrapper.pending {
       background: #ffbe40;
       border: none;
     }
 
-    &:nth-child(4) > div.completed,
-    &:nth-child(5) > div.completed,
-    &:nth-child(6) > div.completed,
-    &:nth-child(7) > div.completed,
-    &:nth-child(8) > div.completed {
+    &:nth-child(4) .table-body__item-wrapper.completed,
+    &:nth-child(5) .table-body__item-wrapper.completed,
+    &:nth-child(6) .table-body__item-wrapper.completed,
+    &:nth-child(7) .table-body__item-wrapper.completed,
+    &:nth-child(8) .table-body__item-wrapper.completed {
       background: #54d561;
       border: none;
     }
 
-    &:nth-child(4) > div.canceled,
-    &:nth-child(5) > div.canceled,
-    &:nth-child(6) > div.canceled,
-    &:nth-child(7) > div.canceled,
-    &:nth-child(8) > div.canceled {
+    &:nth-child(4) .table-body__item-wrapper.canceled,
+    &:nth-child(5) .table-body__item-wrapper.canceled,
+    &:nth-child(6) .table-body__item-wrapper.canceled,
+    &:nth-child(7) .table-body__item-wrapper.canceled,
+    &:nth-child(8) .table-body__item-wrapper.canceled {
       background: #ff7e7e;
       border: none;
     }

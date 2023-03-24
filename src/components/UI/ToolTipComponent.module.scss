@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  display: flex;
+}
+
+.tooltip {
+  position: absolute;
+  width: 262px;
+  padding: 0px 4px 0px 36px;
+  top: -80px;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: left;
+  font-weight: 700;
+  pointer-events: none;
+  z-index: 1000;
+  color: black;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 400;
+  font-size: 12px;
+
+  span {
+    font-weight: 600;
+  }
+  &::after {
+    position: relative;
+    content: url('../../assets/icons/checked-icon.svg');
+    right: 20px;
+    bottom: 70px;
+  }
+  &::before {
+    position: relative;
+    content: url('../../assets/icons/arrow-bottom.svg');
+    left: 85px;
+    top: 94px;
+  }
+}

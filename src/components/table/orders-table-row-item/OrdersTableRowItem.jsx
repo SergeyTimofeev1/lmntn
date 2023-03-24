@@ -1,6 +1,7 @@
 import React from 'react'
 import OrdersSvgSelector from '../orders-svg-selector/OrdersSvgSelector'
 import { useNavigate } from 'react-router-dom'
+import ToolTipComponent from '../../UI/ToolTipComponent'
 
 const OrdersTableRowItem = ({ row, index, options, url }) => {
   const navigate = useNavigate()
@@ -11,10 +12,14 @@ const OrdersTableRowItem = ({ row, index, options, url }) => {
 
   return (
     <td className="table-body__item" key={index} onClick={() => getOrderUrl(url)}>
-      <div className={options ? 'table-body__item-wrapper ' + options : 'table-body__item-wrapper'}>
-        {options && <OrdersSvgSelector id={options} />}
-        {row}
-      </div>
+      <ToolTipComponent>
+        <div
+          className={options ? 'table-body__item-wrapper ' + options : 'table-body__item-wrapper'}
+        >
+          {options && <OrdersSvgSelector id={options} />}
+          {row}
+        </div>
+      </ToolTipComponent>
     </td>
   )
 }

@@ -23,10 +23,15 @@ const UserCardHeader = () => {
             </div>
           </div>
           <div className="header__actions">
-            <button className="header__actions-btn unload">
-              <SvgSelector id="unload" />
-              Загрузить файлы
-            </button>
+            <div className="add-form__upload-file">
+              <input className="add-form__upload-input" type="file" accept=".pdf" />
+              <div className="add-form__upload-block">
+                <button className="header__actions-btn unload">
+                  <SvgSelector id="unload" />
+                  Загрузить файлы
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

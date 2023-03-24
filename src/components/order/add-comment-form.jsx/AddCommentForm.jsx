@@ -40,7 +40,9 @@ const AddCommentForm = () => {
                 <p className="add-form__upload-descr">Максимальный вес файла — 10 Мб</p>
               </div>
             </div>
-            <button className="add-form__button">Отправить</button>
+            <button className="add-form__button" type="button" onClick={commentsAddFormHide}>
+              Отправить
+            </button>
           </form>
         </div>
       </div>
