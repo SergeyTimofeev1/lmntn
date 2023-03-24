@@ -22,9 +22,16 @@ const OrdersTableRow = ({ rowData, options }) => {
     <tr className={'table-body__items ' + options}>
       {row.map((row, index) => {
         if (typeof row[1] === 'object') {
-          return <OrdersTableRowItem key={index} row={row[1].title} options={row[1].status} />
+          return (
+            <OrdersTableRowItem
+              key={index}
+              row={row[1].title}
+              options={row[1].status}
+              url={rowData.contractId}
+            />
+          )
         } else {
-          return <OrdersTableRowItem key={index} row={row[1]} option="" />
+          return <OrdersTableRowItem key={index} row={row[1]} option="" url={rowData.contractId} />
         }
       })}
     </tr>

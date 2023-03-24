@@ -1,0 +1,104 @@
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 243, 247, 1);
+  z-index: 10;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.overlay-close {
+  @extend .button-main;
+  color: white;
+  padding: rem(8) rem(12);
+  position: absolute;
+  right: rem(32);
+  top: rem(8);
+}
+
+.add-form {
+  background: white;
+  width: rem(680);
+  height: rem(480);
+  padding: rem(24);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: rem(24);
+
+  textarea {
+    width: rem(623);
+    height: rem(124);
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(20);
+    color: #ff7e7e;
+  }
+
+  &__file {
+    width: rem(308);
+    padding: rem(8) rem(10) rem(8) rem(8);
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(24);
+    color: #333333;
+    position: relative;
+    border-top: 1px solid #333333;
+
+    &:last-child {
+      border-bottom: 1px solid #333333;
+    }
+
+    &::after {
+      content: url('../../../assets/icons/delete-icon.svg');
+      position: absolute;
+      right: rem(4);
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__upload-file {
+    position: relative;
+  }
+  // скрыл дефолтный инпут с добавлением файла
+  &__upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+  }
+  &__upload-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(16);
+  }
+
+  &__upload-btn {
+    @extend .button-primary;
+    cursor: pointer;
+  }
+
+  &__upload-descr {
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(20);
+  }
+}

@@ -1,6 +1,6 @@
 // import SvgSelector from 'components/SvgSelector/SvgSelector'
 import SvgSelector from 'components/SvgSelector/SvgSelector'
-import { Link, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 const OrdersHeader = () => {
   return (
@@ -13,14 +13,14 @@ const OrdersHeader = () => {
                 <SvgSelector id="logo" />
               </div>
               <div className="header__info-buttons">
-                <Link className="header__info-btn orders-btn" to="/orders">
+                <NavLink className="header__info-btn orders-btn" to="/orders">
                   <SvgSelector id="orders" />
                   Заказы
-                </Link>
-                <Link className="header__info-btn user-btn" to="/orders/user">
+                </NavLink>
+                <NavLink className="header__info-btn user-btn" to="/user">
                   <SvgSelector id="user" />
                   Мишанин С. В.
-                </Link>
+                </NavLink>
               </div>
             </div>
             <div className="header__actions">

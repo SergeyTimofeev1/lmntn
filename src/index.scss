@@ -13,6 +13,8 @@
 @import './scss/blocks/orders-header/orders-header.scss';
 @import './scss/blocks/table/table.scss';
 @import './scss/blocks/user/user.scss';
+@import './scss/blocks/order-component/order-component.scss';
+@import './scss/blocks/add-comment-form/add-comment-form.scss';
 
 body {
   margin: 0;
@@ -54,7 +56,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+h5 {
   margin: 0;
 }
 

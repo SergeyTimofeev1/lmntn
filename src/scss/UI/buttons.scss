@@ -8,6 +8,9 @@
   border: none;
   outline: none;
   cursor: pointer;
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: rem(28);
 
   &:hover {
     background: #515050;

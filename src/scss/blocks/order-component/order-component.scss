@@ -1,0 +1,262 @@
+.order {
+  position: relative;
+  &__inner {
+    background: rgba(240, 243, 247, 1);
+    padding: rem(32) 1rem;
+    @include flex;
+    gap: rem(132);
+    align-items: flex-start;
+  }
+}
+
+.order-header {
+  padding: rem(36) 0 rem(20) 0;
+  &__inner {
+    @include flex;
+    padding-right: rem(300);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: rem(40);
+    color: #333333;
+  }
+}
+
+.header-info {
+  @include flex;
+  gap: rem(75);
+  &__item {
+    @include flex;
+    flex-direction: column;
+    grid-area: rem(5);
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(20);
+  }
+
+  &__item-text {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(28);
+  }
+}
+
+.order__inner {
+}
+
+.order-info {
+  &__buttons {
+    @include flex;
+    justify-content: flex-start;
+    margin-bottom: rem(32);
+  }
+
+  &__button {
+    width: rem(282);
+    height: rem(44);
+  }
+  &__button.history.active {
+    @extend .button-main;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+  }
+
+  &__button.history {
+    @extend .button-primary;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__button.comments.active {
+    @extend .button-main;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+  }
+
+  &__button.comments {
+    @extend .button-primary;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &__button-update {
+    @extend .button-primary;
+    line-height: rem(19);
+    margin-bottom: rem(16);
+  }
+}
+
+.order-comments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: rem(32);
+}
+.comments-item {
+  &__title {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: rem(28);
+    margin-bottom: rem(4);
+
+    span {
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    padding: rem(12);
+    background: white;
+    border-radius: 4;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(24);
+  }
+}
+
+.comments-form {
+  &__text {
+    padding: rem(12);
+    height: rem(100);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: rem(12);
+    border-radius: 4;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(24);
+  }
+
+  &__file-btn {
+    border: rem(1) solid rgba(187, 198, 214, 1);
+    border-radius: rem(4);
+    @include flex-center;
+    width: rem(200);
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(24);
+    padding: rem(8) rem(8) rem(8) rem(35);
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: url('../../../assets/icons/upload-icon.svg');
+      left: rem(8);
+      top: 60%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__file {
+    visibility: hidden;
+  }
+}
+
+.order-customer {
+  &__img {
+    margin-bottom: rem(7);
+  }
+}
+
+.customer-info {
+  background: white;
+  padding: rem(24);
+  border-radius: rem(4);
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: rem(16);
+    margin-bottom: rem(16);
+  }
+
+  &__item:nth-child(1),
+  &__item:nth-child(4),
+  &__item:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+
+  &__buttons {
+    @include flex;
+    gap: rem(16);
+  }
+
+  &__btn {
+    @extend .button-primary;
+    width: 100%;
+  }
+}
+
+.order-history {
+  &__item {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: rem(28);
+    color: #333333;
+    margin-bottom: rem(20);
+    margin-right: rem(8);
+    list-style: circle;
+    list-style-type: disc;
+    margin-left: rem(24);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      left: rem(-11);
+      top: rem(23);
+      border-left: 2px solid #333333;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        left: rem(-11);
+        top: rem(23);
+        border-left: 2px dashed rgba(51, 51, 51, 0.5);
+      }
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    span {
+      opacity: 0.5;
+      padding-left: rem(8);
+    }
+
+    button {
+      width: rem(342);
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: none;
+      outline: none;
+      padding: rem(12);
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: rem(24);
+      color: #333333;
+      cursor: pointer;
+    }
+  }
+}

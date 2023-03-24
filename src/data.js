@@ -106,7 +106,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234525',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: {
@@ -148,7 +148,7 @@ export const tableRowData = [
     }
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234562',
     startDate: '16.12.2022',
     status: 'Исправлен МПП',
     oneC: {
@@ -184,7 +184,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234555',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: 5,
@@ -214,7 +214,7 @@ export const tableRowData = [
     }
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234524',
     startDate: '16.12.2022',
     status: 'Отлож. продажа',
     oneC: {
@@ -241,7 +241,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234534',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: {
@@ -271,7 +271,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234582',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: {
@@ -298,7 +298,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234552',
     startDate: '16.12.2022',
     status: 'Не Продан',
     oneC: {
@@ -325,7 +325,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234519',
     startDate: '16.12.2022',
     status: 'Исправлен МПП',
     oneC: {
@@ -355,7 +355,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234586',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: {
@@ -382,7 +382,7 @@ export const tableRowData = [
     clientPhone: '+7 (999) 888-77-66'
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234526',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: {
@@ -424,7 +424,7 @@ export const tableRowData = [
     }
   },
   {
-    contractId: 'ХХ_1234567',
+    contractId: 'ХХ_1234513',
     startDate: '16.12.2022',
     status: 'Продан',
     oneC: {

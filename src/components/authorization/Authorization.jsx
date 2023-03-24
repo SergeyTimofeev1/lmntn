@@ -9,7 +9,7 @@ import { Navigate } from 'react-router-dom'
 const Authorization = () => {
   const { isAuth, email } = useAuth()
 
-  // if (isAuth) return <Navigate to="/" />
+  // if (!isAuth) return <Navigate to="/" />
 
   return (
     <div className="auth">
