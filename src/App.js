@@ -3,20 +3,19 @@ import { useAuth } from 'hooks/use-auth'
 import Authorization from 'components/authorization/Authorization'
 import { Navigate, Routes, useNavigate } from 'react-router-dom'
 import MainPage from 'pages/MainPage'
-import AddCommentForm from 'components/order/add-comment-form.jsx/AddCommentForm'
 
 function App() {
   const { isAuth, email } = useAuth()
 
   // return <div className="App">{!isAuth && <Navigate replace to="/" />}</div>
   // !! Раcкоментить когда закончу верстать главную
-  // return <div className="App">{!isAuth ? <Authorization /> : <MainPage />}</div>
+  return <div className="App">{!isAuth ? <Authorization /> : <MainPage />}</div>
   // !====
-  return (
-    <div className="App">
-      <MainPage />
-    </div>
-  )
+  // return (
+  //   <div className="App">
+  //     <MainPage />
+  //   </div>
+  // )
 }
 
 export default App

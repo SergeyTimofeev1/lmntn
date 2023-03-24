@@ -3,12 +3,12 @@ import logo from '../../../assets/img/user-logo.jpg'
 import { UserContext } from '../context/UserContext'
 
 const OrderComponentCustomer = () => {
-  const { commentsAddFormShow } = useContext(UserContext)
+  const { commentsAddFormShow, showOrderImg } = useContext(UserContext)
 
   return (
     <div className="order__customer order-customer">
       <div className="order-customer__inner">
-        <img className="order-customer__img" src={logo} alt="user-logo" />
+        <img className="order-customer__img" src={logo} alt="user-logo" onClick={showOrderImg} />
         <div className="order-customer__info customer-info">
           <div className="customer-info__items">
             <div className="customer-info__item">

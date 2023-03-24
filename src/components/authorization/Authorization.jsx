@@ -4,21 +4,17 @@ import RegisterPage from 'pages/RegisterPage'
 import { Link, Route, Routes } from 'react-router-dom'
 import LoginPage from '../../pages/LoginPage'
 import { useAuth } from 'hooks/use-auth'
-import { Navigate } from 'react-router-dom'
 
 const Authorization = () => {
-  const { isAuth, email } = useAuth()
-
-  // if (!isAuth) return <Navigate to="/" />
+  const { isAuth } = useAuth()
 
   return (
     <div className="auth">
-      {/* TODO исправить роутинг!! */}
       <div className={!isAuth ? 'auth__content' : 'orders'}>
         <Routes>
-          <Route path="/" element={<LoginLayout />}>
+          <Route path="/lmntn" element={<LoginLayout />}>
             <Route index element={<LoginPage />} />
-            <Route path="/registration" element={<RegisterPage />} />
+            <Route path="registration" element={<RegisterPage />} />
           </Route>
           <Route path="orders" element={<MainPage />} />
         </Routes>
@@ -33,7 +29,7 @@ const Authorization = () => {
             </a>
           </li>
           <li className="auth__info-item">
-            <Link className="auth__info-link" to="/">
+            <Link className="auth__info-link" to="/lmntn">
               Обратная связь
             </Link>
           </li>

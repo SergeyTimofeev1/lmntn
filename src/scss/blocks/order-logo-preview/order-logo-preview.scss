@@ -1,0 +1,17 @@
+.order-logo {
+}
+
+.logo-overlay {
+  @include flex-center;
+  background: rgba(240, 243, 247, 1);
+  position: relative;
+}
+
+.order-logo-close {
+  @extend .button-main;
+  color: white;
+  padding: rem(8) rem(12);
+  position: absolute;
+  right: rem(48);
+  top: rem(8);
+}

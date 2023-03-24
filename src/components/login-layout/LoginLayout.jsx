@@ -1,16 +1,30 @@
-import React from 'react'
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import React, { useRef, useState } from 'react'
+import { Link, Outlet } from 'react-router-dom'
+import { useAuth } from 'hooks/use-auth'
+import { useParams } from 'react-router-dom'
 
 const LoginLayout = () => {
+  const [isReg, setIsReg] = useState(true)
+  const isRegActive = () => setIsReg(true)
+  const isRegNotActive = () => setIsReg(false)
+
   return (
     <>
       <div className="auth__header">
-        <NavLink className="auth__link" to="/">
+        <Link
+          className={isReg ? 'auth__link active' : 'auth__link'}
+          to="/lmntn"
+          onClick={isRegActive}
+        >
           Вход
-        </NavLink>
-        <NavLink className="auth__link" to="/registration">
+        </Link>
+        <Link
+          className={!isReg ? 'auth__link active' : 'auth__link'}
+          to="registration"
+          onClick={isRegNotActive}
+        >
           Регистрация
-        </NavLink>
+        </Link>
       </div>
       <Outlet />
     </>

@@ -34,6 +34,13 @@
   align-items: flex-start;
   gap: rem(24);
 
+  &__button {
+    @extend .button-main;
+    color: white;
+    width: rem(308);
+    height: rem(44);
+  }
+
   textarea {
     width: rem(623);
     height: rem(124);

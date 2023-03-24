@@ -115,7 +115,7 @@ const UserCard = ({ login }) => {
                 className="user-info__actions-button"
                 onClick={() => {
                   dispatch(removeUser())
-                  navigate('/')
+                  navigate('/lmntn')
                 }}
               >
                 Выйти из профиля
