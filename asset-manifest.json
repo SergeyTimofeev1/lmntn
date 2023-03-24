@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/lmntn/static/css/main.a5c506bc.css",
-    "main.js": "/lmntn/static/js/main.d2fa6b01.js",
+    "main.css": "/lmntn/static/css/main.7550ccb5.css",
+    "main.js": "/lmntn/static/js/main.0e9804f3.js",
+    "static/media/order-logo-big.png": "/lmntn/static/media/order-logo-big.47417200b3f5b5d9a15c.png",
     "static/media/user-logo.jpg": "/lmntn/static/media/user-logo.c16f86e04668f8a02495.jpg",
     "static/media/delete-icon.svg": "/lmntn/static/media/delete-icon.aba64f0423cbcd749ce4.svg",
     "static/media/upload-icon.svg": "/lmntn/static/media/upload-icon.5bd9809486615731d58c.svg",
     "static/media/search-icon.svg": "/lmntn/static/media/search-icon.fa0ba34fb6a00fe81b55.svg",
     "index.html": "/lmntn/index.html",
     "static/media/arrow-icon.svg": "/lmntn/static/media/arrow-icon.9327be06fbc201ba998e.svg",
-    "main.a5c506bc.css.map": "/lmntn/static/css/main.a5c506bc.css.map",
-    "main.d2fa6b01.js.map": "/lmntn/static/js/main.d2fa6b01.js.map"
+    "main.7550ccb5.css.map": "/lmntn/static/css/main.7550ccb5.css.map",
+    "main.0e9804f3.js.map": "/lmntn/static/js/main.0e9804f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5c506bc.css",
-    "static/js/main.d2fa6b01.js"
+    "static/css/main.7550ccb5.css",
+    "static/js/main.0e9804f3.js"
   ]
 }
