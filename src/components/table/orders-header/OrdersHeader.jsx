@@ -1,8 +1,11 @@
 // import SvgSelector from 'components/SvgSelector/SvgSelector'
 import SvgSelector from 'components/SvgSelector/SvgSelector'
 import { NavLink, Outlet } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const OrdersHeader = () => {
+  // console.log(Object.values(useParams()).length)
+  const urlParams = Object.values(useParams()).length
   return (
     <>
       <div className="main-page__header header">
@@ -23,19 +26,28 @@ const OrdersHeader = () => {
                 </NavLink>
               </div>
             </div>
-            <div className="header__actions">
-              <div className="input__wrapper">
-                <input className="header__actions-input" type="search" placeholder="Поиск" />
+            {!urlParams ? (
+              <div className="header__actions">
+                <div className="input__wrapper">
+                  <input className="header__actions-input" type="search" placeholder="Поиск" />
+                </div>
+                <button className="header__actions-btn download">
+                  <SvgSelector id="download" />
+                  Выгрузить в Excel
+                </button>
+                <button className="header__actions-btn unload">
+                  <SvgSelector id="unload" />
+                  Загрузить файлы
+                </button>
               </div>
-              <button className="header__actions-btn download">
-                <SvgSelector id="download" />
-                Выгрузить в Excel
-              </button>
-              <button className="header__actions-btn unload">
-                <SvgSelector id="unload" />
-                Загрузить файлы
-              </button>
-            </div>
+            ) : (
+              <div className="header__actions">
+                <button className="header__actions-btn unload">
+                  <SvgSelector id="unload" />
+                  Загрузить файлы
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
